@@ -20,12 +20,13 @@ def getGameInfo():
 
     allUpdates =    updateRegex.findall(soup)
     lastUpdate =    allUpdates[1]
-    lastVersion =   versionRegex.search(lastUpdate)
-    lastVersion =   lastVersion.group()
-    lastDate =      dateRegex.search(lastUpdate)
-    lastDate =      lastDate.group()
+    lastVersion =   (versionRegex.search(lastUpdate)).group()
+    lastDate =      (dateRegex.search(lastUpdate)).group()
     notes =         noteRegex.findall(lastUpdate)
     notes =         ' '.join([("\n→ " + elem) for elem in notes])
     infoString =    "Last update: " + lastDate + "\nVersion: " + lastVersion + notes
 
     return infoString
+
+if __name__ == '__main__':
+    print(getGameInfo())
