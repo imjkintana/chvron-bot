@@ -13,8 +13,8 @@ Scrapes the update website and formats information.
 Sends a message containing the last update serial, date, and information for Retail Tycoon 2.
 
 # Plans
-Make `refresh` write to a .json file and `lastupdate` pull from it.
+Make `refresh` write to a .json file and have `lastupdate` pull from it.
 
 # Resources
-https://www.freecodecamp.org/news/create-a-discord-bot-with-python/
+https://www.freecodecamp.org/news/create-a-discord-bot-with-python/ \
 https://automatetheboringstuff.com/#toc
